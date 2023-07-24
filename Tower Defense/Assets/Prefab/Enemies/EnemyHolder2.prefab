@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7924241118403684014}
   - component: {fileID: 542714005255204663}
   - component: {fileID: 428780661678355370}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6775192571928381429}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PointA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5145796851378457981}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PointB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2391841123219730591}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyHolder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
