@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5332625308208781898}
   - component: {fileID: 3479346741348404664}
   - component: {fileID: 2925528628300444035}
+  - component: {fileID: 1996933631721449334}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Enemy
@@ -122,6 +123,19 @@ MonoBehaviour:
   PointA: {fileID: 2529180891308536529}
   PointB: {fileID: 2838172549213718408}
   Speed: 4
+--- !u!114 &1996933631721449334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262936427514747277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09eedf337f78d6941b74ccb52cd52a0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 10
 --- !u!1 &2529180891308536529
 GameObject:
   m_ObjectHideFlags: 0
