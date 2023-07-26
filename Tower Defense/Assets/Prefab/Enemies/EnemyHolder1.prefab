@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 10
-  enemy: {fileID: 8029313613244051674}
+  enemy: {fileID: 5372524496563326769}
 --- !u!1 &2529180891308536529
 GameObject:
   m_ObjectHideFlags: 0
