@@ -12,7 +12,7 @@ public class BulletScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-       // Enemy = GameObject.FindGameObjectWithTag("Enemy");
+       Enemy = GameObject.FindGameObjectWithTag("Enemy");
 
     }
 
