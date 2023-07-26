@@ -9,12 +9,6 @@ public class TowerShooting : MonoBehaviour
     public List<GameObject> enemies;
 
     public float Timer;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
