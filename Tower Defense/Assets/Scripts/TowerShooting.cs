@@ -29,7 +29,7 @@ public class TowerShooting : MonoBehaviour
     void Shoot()
     {
        var bullet= Instantiate(Bullet, BulletPos.position, Quaternion.identity);
-        bullet.Enemy = enemies[0];
+       bullet.Enemy = enemies[0];
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
