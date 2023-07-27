@@ -11,8 +11,8 @@ public class BulletScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-       // Enemy = GameObject.FindGameObjectWithTag("Enemy");
+       rb = GetComponent<Rigidbody2D>();
+       //Enemy = GameObject.FindGameObjectWithTag("Enemy");
 
     }
 
