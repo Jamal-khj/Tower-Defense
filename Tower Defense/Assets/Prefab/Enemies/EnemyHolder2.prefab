@@ -218,9 +218,9 @@ GameObject:
   - component: {fileID: 6855159747553329039}
   - component: {fileID: 7971495959912879505}
   - component: {fileID: 3606583610455261137}
-  - component: {fileID: 7924241118403684014}
   - component: {fileID: 542714005255204663}
   - component: {fileID: 428780661678355370}
+  - component: {fileID: 4260112719095843328}
   m_Layer: 6
   m_Name: Enemy2
   m_TagString: Enemy
@@ -323,8 +323,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
---- !u!60 &7924241118403684014
-PolygonCollider2D:
+--- !u!114 &542714005255204663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883368418626095204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bdaefa1691a1274bb1c34ada54a3eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointA: {fileID: 2529180891308536529}
+  PointB: {fileID: 2838172549213718408}
+  Speed: 2
+--- !u!114 &428780661678355370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883368418626095204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09eedf337f78d6941b74ccb52cd52a0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 2
+  enemy: {fileID: 5372524496563326769}
+--- !u!61 &4260112719095843328
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -365,42 +394,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.0022678375, y: 0.2704115}
-      - {x: -0.5317507, y: 0.002268076}
-      - {x: 0.0022678375, y: -0.27041137}
-      - {x: 0.5204115, y: -0.002268076}
-  m_UseDelaunayMesh: 0
---- !u!114 &542714005255204663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883368418626095204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bdaefa1691a1274bb1c34ada54a3eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PointA: {fileID: 2529180891308536529}
-  PointB: {fileID: 2838172549213718408}
-  Speed: 2
---- !u!114 &428780661678355370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883368418626095204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09eedf337f78d6941b74ccb52cd52a0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 2
-  enemy: {fileID: 5372524496563326769}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &2529180891308536529
 GameObject:
   m_ObjectHideFlags: 0
