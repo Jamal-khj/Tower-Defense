@@ -12,16 +12,18 @@ public class BulletScript : MonoBehaviour
     void Start()
     {
        rb = GetComponent<Rigidbody2D>();
-       //Enemy = GameObject.FindGameObjectWithTag("Enemy");
+       Enemy = GameObject.FindGameObjectWithTag("Enemy");
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 direction = Enemy.transform.position - transform.position;
+        if (Enemy != null)
+        {
+            Vector2 direction = Enemy.transform.position - transform.position;
 
-        rb.velocity = new Vector2(direction.x, direction.y).normalized * Force;
-
+            rb.velocity = new Vector2(direction.x, direction.y).normalized * Force;
+        }
     }
 }
