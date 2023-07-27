@@ -122,7 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PointA: {fileID: 2529180891308536529}
   PointB: {fileID: 2838172549213718408}
-  Speed: 4
+  Speed: 2
 --- !u!114 &1996933631721449334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09eedf337f78d6941b74ccb52cd52a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 10
+  hp: 6
   enemy: {fileID: 5372524496563326769}
 --- !u!1 &2529180891308536529
 GameObject:
