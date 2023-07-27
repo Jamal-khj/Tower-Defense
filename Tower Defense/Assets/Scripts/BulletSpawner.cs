@@ -8,6 +8,11 @@ public class BulletSpawner : MonoBehaviour
     /// This script temporarily replaces TowerShooting and BulletScript
     /// </summary>
 
+    private void Start()
+    {
+        
+    }
+
 
     void FixedUpdate()
     {

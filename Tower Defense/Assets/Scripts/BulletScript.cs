@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletScript : MonoBehaviour, IPooledBullet
+public class BulletScript : MonoBehaviour
 {
     public GameObject Enemy;
     private Rigidbody2D rb;
@@ -12,8 +12,6 @@ public class BulletScript : MonoBehaviour, IPooledBullet
     public void OnBulletSpawn()
     {
        rb = GetComponent<Rigidbody2D>();
-       //Enemy = GameObject.FindGameObjectWithTag("Enemy");
-
     }
 
     // Update is called once per frame

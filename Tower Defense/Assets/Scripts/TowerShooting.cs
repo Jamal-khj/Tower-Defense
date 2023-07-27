@@ -21,7 +21,6 @@ public class TowerShooting : MonoBehaviour
             if (enemies.Count > 0)
             {
                 Shoot();
-
             }
         }  
     }

@@ -6,6 +6,7 @@ public class HQHealth : MonoBehaviour
 {
     [SerializeField] private int currentHealth;
     [SerializeField] private int maxHealth;
+    [SerializeField] private int enemyDamage;
 
     // Start is called before the first frame update
     void Start()
@@ -13,9 +14,14 @@ public class HQHealth : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.gameObject.tag == "Enemy")
+        {
+
+        }
     }
+
+
+
 }
