@@ -9,7 +9,7 @@ public class BulletScript : MonoBehaviour
     public float Force;
     
     // Start is called before the first frame update
-    public void OnBulletSpawn()
+    public void Start()
     {
        rb = GetComponent<Rigidbody2D>();
     }
