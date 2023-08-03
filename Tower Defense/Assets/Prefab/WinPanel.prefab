@@ -152,7 +152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &860535138685342265
 RectTransform:
   m_ObjectHideFlags: 0
@@ -496,14 +496,14 @@ GameObject:
   - component: {fileID: 3556136071486069395}
   - component: {fileID: 5547629336095124219}
   - component: {fileID: 7057258199101277581}
-  - component: {fileID: 543016831402739068}
+  - component: {fileID: 1706012391633886951}
   m_Layer: 5
   m_Name: Main Menu Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &350460056472156206
 RectTransform:
   m_ObjectHideFlags: 0
@@ -607,8 +607,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 543016831402739068}
-        m_TargetAssemblyTypeName: GameOverScreen, Assembly-CSharp
+      - m_Target: {fileID: 1706012391633886951}
+        m_TargetAssemblyTypeName: MainMenuLoader, Assembly-CSharp
         m_MethodName: LoadStartMenu
         m_Mode: 1
         m_Arguments:
@@ -619,7 +619,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &543016831402739068
+--- !u!114 &1706012391633886951
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5278810137929061960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16fe7c7caa1bbee429bae4e60b33117d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1dabcdba629d5a943a6501ef375b62cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6229083411108413405
