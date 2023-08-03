@@ -138,6 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 6
   enemy: {fileID: 5372524496563326769}
+  killCount: 0
 --- !u!1 &2529180891308536529
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +378,10 @@ PrefabInstance:
     - target: {fileID: 1970691939893907556, guid: 2244c304e09f1fe4f98c670223bd8f09, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3144404146692834560, guid: 2244c304e09f1fe4f98c670223bd8f09, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6024026453750301970, guid: 2244c304e09f1fe4f98c670223bd8f09, type: 3}
       propertyPath: m_Pivot.x
