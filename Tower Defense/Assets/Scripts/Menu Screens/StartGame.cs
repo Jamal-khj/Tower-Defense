@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    public void LoadLevelSelection()
+    public void LoadStartMenu()
     {
         SceneManager.LoadScene("Level Selection");
     }
