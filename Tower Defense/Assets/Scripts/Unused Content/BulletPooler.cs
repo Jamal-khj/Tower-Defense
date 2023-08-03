@@ -20,12 +20,12 @@ public class BulletPooler : MonoBehaviour
 
     public static BulletPooler Instance;
 
-    #endregion
-
     private void Awake()
     {
         Instance = this;
     }
+
+    #endregion
 
     public List<Pool> bulletList;
 
@@ -59,18 +59,20 @@ public class BulletPooler : MonoBehaviour
         }
 
         GameObject bulletToSpawn = bulletDictionary[tag].Dequeue();
+
         bulletToSpawn.SetActive(true);
         bulletToSpawn.transform.position = position;
         bulletToSpawn.transform.rotation = rotation;
 
+        IPooledBullet pooledBullet = bulletToSpawn.GetComponent<IPooledBullet>();
+
+        if (pooledBullet != null)
+        {
+            pooledBullet.OnBulletSpawn();
+        }
+
         bulletDictionary[tag].Enqueue(bulletToSpawn);
 
         return bulletToSpawn;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

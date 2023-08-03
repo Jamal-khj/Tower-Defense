@@ -7,11 +7,12 @@ TagManager:
   - Enemy
   - Bullet
   - Boundary
+  - 'Boundary '
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Tower
   - Water
   - UI
   - Enemy
