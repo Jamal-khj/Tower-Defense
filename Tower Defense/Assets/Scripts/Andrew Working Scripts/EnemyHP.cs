@@ -2,16 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyHP : MonoBehaviour
 {
     [SerializeField] private int hp = 2;
     [SerializeField] private GameObject enemy;
+    [SerializeField] private int killCount;
+
+    void Start()
+    {
+        killCount = 0;
+    }
 
     // Update is called once per frame
     void Update()
     {
         Death();
+
+        if (killCount == 10)
+        {
+            //SceneManager.LoadScene("");
+        }
     }
 
     public void Death()
@@ -19,6 +31,7 @@ public class EnemyHP : MonoBehaviour
         if (hp <= 0)
         {
             Destroy(enemy);
+            killCount++;
         }
     }
 

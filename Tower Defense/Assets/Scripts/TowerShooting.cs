@@ -7,7 +7,6 @@ public class TowerShooting : MonoBehaviour
     public BulletScript Bullet;
     public Transform BulletPos;
 
-
     public List<GameObject> enemies;
 
     public float Timer;

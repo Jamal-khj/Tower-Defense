@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Timeline;
 
 public class TowerSpawnScript : MonoBehaviour
 {
@@ -14,13 +15,14 @@ public class TowerSpawnScript : MonoBehaviour
     private bool canPlace;
     private bool releasedButton;
 
+    public int coinCount;
+
     LinkedList<GameObject> towers = new();
 
     void Start()
     {
         canPlace = false;
         releasedButton = true;
-
     }
 
     // Update is called once per frame
