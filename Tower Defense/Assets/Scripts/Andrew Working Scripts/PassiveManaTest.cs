@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PassiveManaTest : MonoBehaviour
 {
 
-    //attached to currency bar UI
+    //attached to currency bar UI parent
 
     public Slider coinSlider;
     public float currentAmount;
@@ -21,8 +21,8 @@ public class PassiveManaTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentAmount += Time.deltaTime;
         coinSlider.value = currentAmount;
         coinSlider.maxValue = coinMax;
+        currentAmount += Time.deltaTime;
     }
 }
