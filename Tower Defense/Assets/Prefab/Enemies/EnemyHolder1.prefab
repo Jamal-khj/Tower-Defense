@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8247396318357226942}
   - component: {fileID: 5332625308208781898}
   - component: {fileID: 3479346741348404664}
-  - component: {fileID: 2925528628300444035}
   - component: {fileID: 1996933631721449334}
+  - component: {fileID: 349094195665729112}
   m_Layer: 6
   m_Name: Knight
   m_TagString: Enemy
@@ -94,7 +94,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -107,23 +107,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 6
---- !u!114 &2925528628300444035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262936427514747277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bdaefa1691a1274bb1c34ada54a3eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PointA: {fileID: 2529180891308536529}
-  PointB: {fileID: 2838172549213718408}
-  Speed: 2
 --- !u!114 &1996933631721449334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,9 +121,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09eedf337f78d6941b74ccb52cd52a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 6
+  hp: 10
   enemy: {fileID: 5372524496563326769}
   killCount: 0
+--- !u!114 &349094195665729112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262936427514747277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b616785538c25145b12cfe3d3bba124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: {fileID: 11400000, guid: ddbea516c76f2e54fb5e8f6377a2ef73, type: 2}
 --- !u!1 &2529180891308536529
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,10 +376,6 @@ PrefabInstance:
     - target: {fileID: 1970691939893907556, guid: 2244c304e09f1fe4f98c670223bd8f09, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3144404146692834560, guid: 2244c304e09f1fe4f98c670223bd8f09, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6024026453750301970, guid: 2244c304e09f1fe4f98c670223bd8f09, type: 3}
       propertyPath: m_Pivot.x

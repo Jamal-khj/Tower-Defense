@@ -52,9 +52,17 @@ public class TowerSpawnScript : MonoBehaviour
     {
         if (releasedButton == false && canPlace == true)
         {
+
+            /// do a raycast
+            /// if the raycast hits a tower collider (show upgrade panel)
+            /// if the raycast hits the ground( show the buy tower panel
+            /// when you buy a tower, remove the collider and add tower 
             GameObject spawnedTower = Instantiate(towerPrefab);
 
             spawnedTower.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 5));
+            var x = Mathf.Floor(spawnedTower.transform.position.x) + .5f;
+            var y = Mathf.Floor(spawnedTower.transform.position.y) + .5f;
+            spawnedTower.transform.position= new Vector3(x, y, 0);
             canPlace = false;
         }
     }

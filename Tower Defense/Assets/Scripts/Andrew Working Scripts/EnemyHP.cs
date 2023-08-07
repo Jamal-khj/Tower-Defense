@@ -22,7 +22,7 @@ public class EnemyHP : MonoBehaviour
 
         if (killCount == 10)
         {
-            //SceneManager.LoadScene("");
+            SceneManager.LoadScene("Win");
         }
     }
 
