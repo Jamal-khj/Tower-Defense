@@ -82,4 +82,4 @@ MonoBehaviour:
   - {fileID: 5372524496563326769, guid: 3e3afb152fa252b49852430bfd8918eb, type: 3}
   - {fileID: 5372524496563326769, guid: 1b196b29ca63da3439483c1fa0581ee9, type: 3}
   SpawnTimer: 0
-  FixedTimer: 0.4
+  FixedTimer: 3
