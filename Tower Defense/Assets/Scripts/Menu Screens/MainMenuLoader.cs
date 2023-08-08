@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOverScreen : MonoBehaviour
+public class MainMenuLoader : MonoBehaviour
 {
     public void LoadStartMenu()
     {
         SceneManager.LoadScene("Home Screen");
+        Time.timeScale = 1.0f;
     }
 }

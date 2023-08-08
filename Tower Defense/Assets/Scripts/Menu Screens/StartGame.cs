@@ -8,5 +8,6 @@ public class StartGame : MonoBehaviour
     public void LoadStartMenu()
     {
         SceneManager.LoadScene("Level Selection");
+        Time.timeScale = 1.0f;
     }
 }
