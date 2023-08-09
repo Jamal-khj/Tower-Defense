@@ -7,7 +7,7 @@ TagManager:
   - Enemy
   - Bullet
   - Boundary
-  - 'Boundary '
+  - HQ
   layers:
   - Default
   - TransparentFX
