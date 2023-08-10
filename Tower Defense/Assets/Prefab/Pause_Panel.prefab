@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2960001573596248975}
   - component: {fileID: 2872362522337298445}
   - component: {fileID: 5428932534475606757}
-  - component: {fileID: 3431374627685488458}
+  - component: {fileID: 5965183632804769631}
   m_Layer: 5
   m_Name: Main Menu
   m_TagString: Untagged
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3431374627685488458}
+      - m_Target: {fileID: 5965183632804769631}
         m_TargetAssemblyTypeName: MainMenuLoader, Assembly-CSharp
         m_MethodName: LoadStartMenu
         m_Mode: 1
@@ -135,7 +135,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3431374627685488458
+--- !u!114 &5965183632804769631
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
