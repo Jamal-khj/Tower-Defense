@@ -10,8 +10,8 @@ public class BulletDestory : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Destroy(gameObject);
             Instantiate(Explosion, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
 
         if (collision.gameObject.tag == "Boundary")
