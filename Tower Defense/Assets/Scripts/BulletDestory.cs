@@ -18,5 +18,10 @@ public class BulletDestory : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+        if (collision.gameObject.tag == "HQ")
+        {
+            Destroy(gameObject);
+        }
     }
 }
