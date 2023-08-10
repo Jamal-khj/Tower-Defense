@@ -5,19 +5,18 @@ using UnityEngine.Timeline;
 
 public class TowerSpawnScript : MonoBehaviour
 {
-
-    //attached to main camera
-
     public GameObject towerPrefab;
-
     private Vector3 mousePos;
-
     private bool canPlace;
     private bool releasedButton;
+    public GameObject optionsPanel;
+    private Vector3 currentTowerSpawnLocation;
 
-    public int coinCount;
+    private void Awake()
+    {
+        optionsPanel.SetActive(false);
+    }
 
-    LinkedList<GameObject> towers = new();
 
     void Start()
     {
@@ -25,11 +24,20 @@ public class TowerSpawnScript : MonoBehaviour
         releasedButton = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         MouseInput();
-        SpawnTower();
+        if (releasedButton == false && canPlace == true)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+
+            if (hit.transform.tag == "TowerPos")
+            {
+                currentTowerSpawnLocation = hit.transform.position;
+                Debug.Log(currentTowerSpawnLocation + "THIS IS THE CURRENT POSITION!!");
+                ShowOptionsPanel();
+            }
+        }
     }
 
     public void MouseInput()
@@ -50,20 +58,24 @@ public class TowerSpawnScript : MonoBehaviour
 
     public void SpawnTower()
     {
-        if (releasedButton == false && canPlace == true)
-        {
-
-            /// do a raycast
-            /// if the raycast hits a tower collider (show upgrade panel)
-            /// if the raycast hits the ground( show the buy tower panel
-            /// when you buy a tower, remove the collider and add tower 
-            GameObject spawnedTower = Instantiate(towerPrefab);
-
-            spawnedTower.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 5));
-            var x = Mathf.Floor(spawnedTower.transform.position.x) + .5f;
-            var y = Mathf.Floor(spawnedTower.transform.position.y) + .5f;
-            spawnedTower.transform.position= new Vector3(x, y, 0);
-            canPlace = false;
-        }
+        GameObject spawnedTower = Instantiate(towerPrefab, currentTowerSpawnLocation, Quaternion.identity);
+        optionsPanel.SetActive(false);
+        canPlace = false;
     }
+
+    public void ShowOptionsPanel()
+    {
+        //If you want you can play animations for panels fading in
+        optionsPanel.SetActive(true);
+    }
+
+    /// do a raycast
+    /// if the raycast hits a tower collider (show upgrade panel)
+    /// if the raycast hits the ground( show the buy tower panel
+    /// when you buy a tower, remove the collider and add tower 
+    //spawnedTower.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 5));
+    //spawnedTower.transform.position = Camera.main.ScreenToWorldPoint();
+    //var x = Mathf.Floor(spawnedTower.transform.position.x) + .5f;
+    //var y = Mathf.Floor(spawnedTower.transform.position.y) + .5f;
+    //spawnedTower.transform.position = new Vector3(x, y, 0);
 }
