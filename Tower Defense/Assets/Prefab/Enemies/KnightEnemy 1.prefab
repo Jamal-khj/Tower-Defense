@@ -146,7 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2391841123219730591}
   m_Layer: 6
-  m_Name: EnemyHolder1
+  m_Name: KnightEnemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b616785538c25145b12cfe3d3bba124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints: {fileID: 11400000, guid: 67d4474cafc668b49a34cf8b91ba87c2, type: 2}
+  waypoints: {fileID: 11400000, guid: ddbea516c76f2e54fb5e8f6377a2ef73, type: 2}
 --- !u!114 &4564222487314107507
 MonoBehaviour:
   m_ObjectHideFlags: 0
