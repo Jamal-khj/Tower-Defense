@@ -583,7 +583,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1040183923}
-        m_TargetAssemblyTypeName: GameOverScreen, Assembly-CSharp
+        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
         m_MethodName: LoadStartMenu
         m_Mode: 1
         m_Arguments:
@@ -641,7 +641,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1040183918}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16fe7c7caa1bbee429bae4e60b33117d, type: 3}
+  m_Script: {fileID: 11500000, guid: 79d00c489f1828f49a061e2131d7e6c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1079348548
