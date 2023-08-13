@@ -1,17 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+//using Andrew.Script;)
 
 public class WaypointFollower : MonoBehaviour
 {
     public WayPointHolder waypoints;
     int index = 0;
     float dist;
-
-    void Start()
-    {
-
-    }
 
     void Update()
     {

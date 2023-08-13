@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletDestory : MonoBehaviour
+public class BulletDestroy : MonoBehaviour
 {
     public GameObject Explosion;
 

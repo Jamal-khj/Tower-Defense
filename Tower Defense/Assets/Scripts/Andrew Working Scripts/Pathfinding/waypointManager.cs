@@ -1,11 +1,10 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
+//using Andrew.Script;)
 
 public class waypointManager : MonoBehaviour
 {
-    // create refference to the list of points
+    // create reference to the list of points
     public List<GameObject> pointObjects = new List<GameObject>();
     // a refernce to th point prefabs
     public WayPointHolder pointHolder;

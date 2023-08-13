@@ -1,14 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+//using Andrew.Script;)
 
 public class EnemyHP : MonoBehaviour
 {
     [SerializeField] private int hp = 2;
-    [SerializeField] private GameObject enemy;
     [SerializeField] private int killCount;
+
+    [SerializeField] private GameObject enemy;
 
     void Start()
     {
