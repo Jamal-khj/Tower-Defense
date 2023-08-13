@@ -2,16 +2,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class HQHealth : MonoBehaviour
+public class HQHealth : MonoBehaviour, IDamageable<int>
 {
     [SerializeField] private float currentHP;
     [SerializeField] private float maxHP;
+    [SerializeField] private int dmgValue = 1;
     public Slider healthSlider;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHP = maxHP;
+
     }
 
     // Update is called once per frame
@@ -26,13 +28,17 @@ public class HQHealth : MonoBehaviour
     {
         if (collision.collider.CompareTag("Enemy"))
         {
-            TakeDamage();
+            TakeDamage(dmgValue);
         }
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        currentHP -= 2;
+        float totalDamage;
+        
+        currentHP -= damage;
+
+        totalDamage = damage;
     }
 
     public void GameOver()

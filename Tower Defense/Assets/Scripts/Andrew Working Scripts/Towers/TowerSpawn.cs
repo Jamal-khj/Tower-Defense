@@ -17,7 +17,6 @@ public class TowerSpawn : MonoBehaviour
         optionsPanel.SetActive(false);
     }
 
-
     void Start()
     {
         canPlace = false;
