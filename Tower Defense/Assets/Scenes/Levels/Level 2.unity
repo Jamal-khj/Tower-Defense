@@ -7440,7 +7440,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1493556274}
         m_TargetAssemblyTypeName: TowerSpawnScript, Assembly-CSharp
         m_MethodName: SpawnTower
         m_Mode: 1
