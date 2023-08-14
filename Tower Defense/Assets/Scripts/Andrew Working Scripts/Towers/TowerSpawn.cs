@@ -8,7 +8,7 @@ public class TowerSpawn : MonoBehaviour
 
     private Vector3 mousePos;
     private Vector3 currentTowerSpawnLocation;
-
+    private Collider2D currentCollider;
     private bool canPlace;
     private bool releasedButton;
 
@@ -34,6 +34,7 @@ public class TowerSpawn : MonoBehaviour
             if (hit.transform.CompareTag("TowerPos"))
             {
                 currentTowerSpawnLocation = hit.transform.position;
+                currentCollider = hit.collider;
                 Debug.Log(currentTowerSpawnLocation + "THIS IS THE CURRENT POSITION!!");
                 ShowOptionsPanel();
             }
@@ -62,6 +63,7 @@ public class TowerSpawn : MonoBehaviour
         GameObject spawnedTower = Instantiate(towerPrefab, currentTowerSpawnLocation, Quaternion.identity);
         optionsPanel.SetActive(false);
         canPlace = false;
+        currentCollider.enabled = false;
     }
 
     private void ShowOptionsPanel()
