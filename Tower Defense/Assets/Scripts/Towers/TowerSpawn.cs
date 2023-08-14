@@ -11,6 +11,7 @@ public class TowerSpawn : MonoBehaviour
     private Collider2D currentCollider;
     private bool canPlace;
     private bool releasedButton;
+    TowerHandler current;
 
     void Awake()
     {
@@ -34,6 +35,7 @@ public class TowerSpawn : MonoBehaviour
             if (hit.transform.CompareTag("TowerPos"))
             {
                 currentTowerSpawnLocation = hit.transform.position;
+
                 currentCollider = hit.collider;
                 Debug.Log(currentTowerSpawnLocation + "THIS IS THE CURRENT POSITION!!");
                 ShowOptionsPanel();
@@ -64,6 +66,8 @@ public class TowerSpawn : MonoBehaviour
         optionsPanel.SetActive(false);
         canPlace = false;
         currentCollider.enabled = false;
+
+      
     }
 
     private void ShowOptionsPanel()
