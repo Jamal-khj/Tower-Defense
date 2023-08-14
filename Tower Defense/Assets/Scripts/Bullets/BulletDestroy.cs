@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using Jamal.Script;)
+//using Mehdi.Script;)
 
 public class BulletDestroy : MonoBehaviour
 {
