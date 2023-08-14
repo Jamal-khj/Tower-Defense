@@ -4,8 +4,13 @@ using UnityEngine;
 public class WaypointFollower : MonoBehaviour
 {
     public WayPointHolder waypoints;
-    int index = 0;
+    int index;
     float dist;
+
+    private void Awake()
+    {
+        index = 0;
+    }
 
     void Update()
     {

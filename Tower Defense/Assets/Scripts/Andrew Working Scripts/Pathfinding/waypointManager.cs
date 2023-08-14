@@ -17,10 +17,4 @@ public class waypointManager : MonoBehaviour
             pointHolder.points[i] = pointObjects[i].transform.position;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

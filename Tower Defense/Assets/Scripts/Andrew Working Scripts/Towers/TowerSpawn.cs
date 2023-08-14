@@ -37,6 +37,7 @@ public class TowerSpawn : MonoBehaviour
                 Debug.Log(currentTowerSpawnLocation + "THIS IS THE CURRENT POSITION!!");
                 ShowOptionsPanel();
             }
+            
         }
     }
 

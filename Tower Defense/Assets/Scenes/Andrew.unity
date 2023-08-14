@@ -883,7 +883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerPrefab: {fileID: 276504300817273226, guid: 1790cbc5e7f06f34c99eeebf74ac67df, type: 3}
-  optionsPanel: {fileID: 444949829}
+  optionsPanel: {fileID: 2022602238}
 --- !u!1 &502022570
 GameObject:
   m_ObjectHideFlags: 0
@@ -3132,7 +3132,6 @@ MonoBehaviour:
   - {fileID: 1076232851}
   - {fileID: 570264626}
   - {fileID: 1772954084}
-  - {fileID: 380883849}
   - {fileID: 380883849}
   pointHolder: {fileID: 11400000, guid: 67d4474cafc668b49a34cf8b91ba87c2, type: 2}
 --- !u!4 &1002131520
@@ -6628,7 +6627,6 @@ MonoBehaviour:
   - {fileID: 1436892322}
   - {fileID: 860259660}
   - {fileID: 87187386}
-  - {fileID: 1910047521}
   - {fileID: 1910047521}
   pointHolder: {fileID: 11400000, guid: ddbea516c76f2e54fb5e8f6377a2ef73, type: 2}
 --- !u!4 &1615911614
