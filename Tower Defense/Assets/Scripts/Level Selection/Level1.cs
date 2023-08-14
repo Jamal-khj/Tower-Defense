@@ -8,5 +8,6 @@ public class Level1 : MonoBehaviour
     public void LoadLevel1()
     {
         SceneManager.LoadScene("Level 1");
+        Time.timeScale = 1.0f;
     }
 }

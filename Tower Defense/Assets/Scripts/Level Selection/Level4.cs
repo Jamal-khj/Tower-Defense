@@ -8,5 +8,6 @@ public class Level4 : MonoBehaviour
     public void LoadLevel4()
     {
         SceneManager.LoadScene("Level 4");
+        Time.timeScale = 1.0f;
     }
 }

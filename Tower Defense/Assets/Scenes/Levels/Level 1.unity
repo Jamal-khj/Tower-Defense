@@ -8171,7 +8171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 478906991222402114, guid: f5f56ecc48e38174d96a2e1db954516b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000030517578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 478906991222402114, guid: f5f56ecc48e38174d96a2e1db954516b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -14690,7 +14690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db9d972360d4ee243abf8268ee6f08c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingTime: 60
+  StartingTime: 5
   CountDownText: {fileID: 81951161}
   WinScreen: {fileID: 1849642733}
 --- !u!1001 &1763551738
@@ -15130,7 +15130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1519873771309815068, guid: f7c10b21896601e40bd614f6b3965686, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
