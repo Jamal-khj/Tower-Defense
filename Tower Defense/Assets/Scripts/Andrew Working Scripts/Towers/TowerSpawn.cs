@@ -1,22 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Timeline;
+//using Andrew.Script;)
 
-public class TowerSpawnScript : MonoBehaviour
+public class TowerSpawn : MonoBehaviour
 {
-    public GameObject towerPrefab;
+    [SerializeField] private GameObject towerPrefab;
+    [SerializeField] private GameObject optionsPanel;
+
     private Vector3 mousePos;
-    private bool canPlace;
-    private bool releasedButton;
-    public GameObject optionsPanel;
     private Vector3 currentTowerSpawnLocation;
 
-    private void Awake()
+    private bool canPlace;
+    private bool releasedButton;
+
+    void Awake()
     {
         optionsPanel.SetActive(false);
     }
-
 
     void Start()
     {
@@ -27,16 +26,18 @@ public class TowerSpawnScript : MonoBehaviour
     void Update()
     {
         MouseInput();
+        
         if (releasedButton == false && canPlace == true)
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
-            if (hit.transform.tag == "TowerPos")
+            if (hit.transform.CompareTag("TowerPos"))
             {
                 currentTowerSpawnLocation = hit.transform.position;
                 Debug.Log(currentTowerSpawnLocation + "THIS IS THE CURRENT POSITION!!");
                 ShowOptionsPanel();
             }
+            
         }
     }
 
@@ -56,14 +57,14 @@ public class TowerSpawnScript : MonoBehaviour
         }
     }
 
-    public void SpawnTower()
+    private void SpawnTower()
     {
         GameObject spawnedTower = Instantiate(towerPrefab, currentTowerSpawnLocation, Quaternion.identity);
         optionsPanel.SetActive(false);
         canPlace = false;
     }
 
-    public void ShowOptionsPanel()
+    private void ShowOptionsPanel()
     {
         //If you want you can play animations for panels fading in
         optionsPanel.SetActive(true);

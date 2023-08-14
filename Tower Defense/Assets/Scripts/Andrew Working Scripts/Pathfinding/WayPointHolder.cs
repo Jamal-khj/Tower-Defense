@@ -1,6 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+//using Andrew.Script;)
+
 [CreateAssetMenu()]
 public class WayPointHolder : ScriptableObject
 {

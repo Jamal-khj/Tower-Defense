@@ -1,14 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+//using Andrew.Script;)
 
-public class EnemyHP : MonoBehaviour
+public class EnemyHP : MonoBehaviour, IDamageable<int>
 {
-    [SerializeField] private int hp = 2;
-    [SerializeField] private GameObject enemy;
+    [SerializeField] private int hp;
     [SerializeField] private int killCount;
+    [SerializeField] private int dmgValue = 2;
+
+    [SerializeField] private GameObject enemy;
 
     void Start()
     {
@@ -35,11 +36,20 @@ public class EnemyHP : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            hp -= 1;
+            TakeDamage(dmgValue);
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        float totalDamage;
+
+            hp -= damage;
+
+            totalDamage = damage;
     }
 }
