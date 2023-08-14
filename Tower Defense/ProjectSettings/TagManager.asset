@@ -10,6 +10,8 @@ TagManager:
   - 'Boundary '
   - TowerPos
   - HQ
+  - Bullet Slow
+  - Bullet Rapid
   layers:
   - Default
   - TransparentFX
