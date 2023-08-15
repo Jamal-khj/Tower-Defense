@@ -14709,6 +14709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HQ Tower
       objectReference: {fileID: 0}
+    - target: {fileID: 4788992719571671128, guid: 8bf7f0ed1a006ec4a9124ae8b38f1c73, type: 3}
+      propertyPath: m_TagString
+      value: HQ
+      objectReference: {fileID: 0}
     - target: {fileID: 9170330663414628037, guid: 8bf7f0ed1a006ec4a9124ae8b38f1c73, type: 3}
       propertyPath: m_RootOrder
       value: 1

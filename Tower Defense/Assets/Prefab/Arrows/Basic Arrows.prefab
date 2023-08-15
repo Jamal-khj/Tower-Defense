@@ -130,6 +130,7 @@ MonoBehaviour:
   Enemy: {fileID: 0}
   Force: 10
   bullet: {fileID: 0}
+  arrowShooting: {fileID: 0}
 --- !u!58 &3666088819525181034
 CircleCollider2D:
   m_ObjectHideFlags: 0

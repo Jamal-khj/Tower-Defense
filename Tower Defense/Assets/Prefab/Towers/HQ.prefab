@@ -145,4 +145,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHP: 0
   maxHP: 10
+  dmgValue: 1
   healthSlider: {fileID: 0}

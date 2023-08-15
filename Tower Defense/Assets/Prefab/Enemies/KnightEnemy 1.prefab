@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 4564222487314107507}
   - component: {fileID: 4238949510052118345}
   - component: {fileID: 3906113296856510290}
+  - component: {fileID: 6555214062453221552}
   m_Layer: 6
   m_Name: Knight_walk_01
   m_TagString: Enemy
@@ -373,6 +374,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &6555214062453221552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8029313613244051674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab29f7b2b2096dc49a213c3e3b827970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6282639221371125934
 PrefabInstance:
   m_ObjectHideFlags: 0

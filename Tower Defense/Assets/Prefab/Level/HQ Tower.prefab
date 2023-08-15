@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -6719005064707680282}
   m_Layer: 0
   m_Name: HQ Tower
-  m_TagString: Untagged
+  m_TagString: HQ
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,4 +145,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHP: 0
   maxHP: 10
+  dmgValue: 1
   healthSlider: {fileID: 0}
