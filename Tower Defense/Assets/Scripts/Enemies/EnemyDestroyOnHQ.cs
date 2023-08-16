@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 //using Jamal.Script;)
 
-public class EnemyDestoryOnHQ : MonoBehaviour
+public class EnemyDestroyOnHQ : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
