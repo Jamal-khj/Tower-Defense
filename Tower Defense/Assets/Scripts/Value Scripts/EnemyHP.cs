@@ -32,9 +32,10 @@ public class EnemyHP : MonoBehaviour, IDamageable<int>
     {
         if (hp <= 0)
         {
+            deathSound.Play();
             Destroy(enemy);
             killCount++;
-            deathSound.Play();
+       
         }
     }
 
