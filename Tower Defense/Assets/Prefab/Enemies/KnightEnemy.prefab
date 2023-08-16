@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 2391841123219730591}
   - component: {fileID: -1315890606121277733}
   - component: {fileID: -8199896272825831484}
+  - component: {fileID: 9062503844493149563}
   m_Layer: 6
   m_Name: KnightEnemy
   m_TagString: Untagged
@@ -285,6 +286,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &9062503844493149563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5372524496563326769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab29f7b2b2096dc49a213c3e3b827970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8029313613244051674
 GameObject:
   m_ObjectHideFlags: 0
