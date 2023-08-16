@@ -10,6 +10,7 @@ public class EnemyHP : MonoBehaviour, IDamageable<int>
     [SerializeField] private int dmgValue = 2;
 
     [SerializeField] private GameObject enemy;
+    [SerializeField] private AudioSource deathSound;
 
     void Start()
     {
@@ -33,6 +34,7 @@ public class EnemyHP : MonoBehaviour, IDamageable<int>
         {
             Destroy(enemy);
             killCount++;
+            deathSound.Play();
         }
     }
 
