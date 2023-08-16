@@ -10,7 +10,6 @@ public class BulletScript : MonoBehaviour
     public float Force;
 
     public GameObject bullet;
-    [SerializeField] private AudioSource shootingSfx;
     
     // Start is called before the first frame update
     void Start()
@@ -27,7 +26,6 @@ public class BulletScript : MonoBehaviour
             Vector2 direction = Enemy.transform.position - transform.position;
 
             rb.velocity = new Vector2(direction.x, direction.y).normalized * Force;
-            shootingSfx.Play();
         }
     }
 }

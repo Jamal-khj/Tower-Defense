@@ -12,6 +12,8 @@ public class TowerShooting : MonoBehaviour
 
     public float Timer;
 
+    [SerializeField] AudioSource arrowShooting;
+
     // Update is called once per frame
     void Update()
     {
@@ -32,6 +34,7 @@ public class TowerShooting : MonoBehaviour
     {
        var bullet = Instantiate(bulletObj, bulletPos.position, Quaternion.identity);
        bullet.Enemy = enemies[0];
+        arrowShooting.Play();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
