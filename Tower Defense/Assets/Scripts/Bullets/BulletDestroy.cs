@@ -12,17 +12,22 @@ public class BulletDestroy : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             Instantiate(Explosion, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            DestroyObject();
         }
 
         if (collision.gameObject.tag == "Boundary")
         {
-            Destroy(gameObject);
+            DestroyObject();
         }
         
         if (collision.gameObject.tag == "HQ")
         {
-            Destroy(gameObject);
+            DestroyObject();
         }
+    }
+
+    public void DestroyObject()
+    {
+        Destroy(gameObject);
     }
 }
