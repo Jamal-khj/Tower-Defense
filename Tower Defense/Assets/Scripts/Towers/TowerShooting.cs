@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class TowerShooting : MonoBehaviour
 {
-    public BulletScript Bullet;
-    public Transform BulletPos;
+    public BulletScript bulletObj;
+    public Transform bulletPos;
 
     public List<GameObject> enemies;
 
@@ -30,7 +30,7 @@ public class TowerShooting : MonoBehaviour
 
     void Shoot()
     {
-       var bullet = Instantiate(Bullet, BulletPos.position, Quaternion.identity);
+       var bullet = Instantiate(bulletObj, bulletPos.position, Quaternion.identity);
        bullet.Enemy = enemies[0];
     }
     private void OnTriggerEnter2D(Collider2D collision)

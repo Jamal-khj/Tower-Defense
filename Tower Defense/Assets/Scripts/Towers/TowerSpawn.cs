@@ -8,6 +8,7 @@ public class TowerSpawn : MonoBehaviour
 
     private Vector3 mousePos;
     private Vector3 currentTowerSpawnLocation;
+
     private Collider2D currentCollider;
     private bool canPlace;
     private bool releasedButton;
@@ -37,7 +38,7 @@ public class TowerSpawn : MonoBehaviour
                 currentTowerSpawnLocation = hit.transform.position;
 
                 currentCollider = hit.collider;
-                Debug.Log(currentTowerSpawnLocation + "THIS IS THE CURRENT POSITION!!");
+                Debug.Log($"THE CURRENT POSITION IS {currentTowerSpawnLocation}");
                 ShowOptionsPanel();
             }
             
