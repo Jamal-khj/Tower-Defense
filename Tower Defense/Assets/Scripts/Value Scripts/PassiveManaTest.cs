@@ -5,9 +5,7 @@ using UnityEngine.UI;
 
 public class PassiveManaTest : MonoBehaviour
 {
-
     //attached to currency bar UI parent
-
     public Slider coinSlider;
     public float currentAmount;
     public int coinMax;
