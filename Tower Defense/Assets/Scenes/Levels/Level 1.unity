@@ -7607,11 +7607,23 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
+      propertyPath: SpawnPoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
       propertyPath: EnemyPrefabs.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
+      propertyPath: SpawnPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1937419714}
+    - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
       propertyPath: EnemyPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 5372524496563326769, guid: 3e3afb152fa252b49852430bfd8918eb, type: 3}
+    - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
+      propertyPath: EnemyPrefabs.Array.data[1]
       value: 
       objectReference: {fileID: 5372524496563326769, guid: 3e3afb152fa252b49852430bfd8918eb, type: 3}
     m_RemovedComponents: []
@@ -8939,6 +8951,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1371231633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1519873771309815068, guid: f7c10b21896601e40bd614f6b3965686, type: 3}
+  m_PrefabInstance: {fileID: 439356763}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1371687897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12311,7 +12328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartingTime: 60
   CountDownText: {fileID: 81951161}
-  WinScreen: {fileID: 0}
+  WinScreen: {fileID: 1371231633}
 --- !u!1 &1725315194 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4dd0fc813b245ed4e8c88956da67674c, type: 3}
@@ -12909,6 +12926,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!4 &1937419714 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 359068056314764764, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
+  m_PrefabInstance: {fileID: 708772926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2015663620
 GameObject:
   m_ObjectHideFlags: 0
