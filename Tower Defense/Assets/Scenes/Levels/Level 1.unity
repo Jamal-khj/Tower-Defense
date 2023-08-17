@@ -7660,7 +7660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d194239f06cacb49b9e45917fbabc28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 276504300817273226, guid: 1790cbc5e7f06f34c99eeebf74ac67df, type: 3}
+  towerPrefab: {fileID: 4685198866706830210, guid: 71ecd0dd3e5983048bd78eb09b9bae11, type: 3}
   optionsPanel: {fileID: 1124094995}
 --- !u!4 &713274008
 Transform:
@@ -8951,11 +8951,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1371231633 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1519873771309815068, guid: f7c10b21896601e40bd614f6b3965686, type: 3}
-  m_PrefabInstance: {fileID: 439356763}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1371687897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12326,9 +12321,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db9d972360d4ee243abf8268ee6f08c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingTime: 60
+  StartingTime: 5
   CountDownText: {fileID: 81951161}
-  WinScreen: {fileID: 1371231633}
+  WinScreen: {fileID: 0}
 --- !u!1 &1725315194 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4dd0fc813b245ed4e8c88956da67674c, type: 3}

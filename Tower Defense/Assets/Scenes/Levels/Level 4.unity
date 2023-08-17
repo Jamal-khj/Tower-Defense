@@ -408,6 +408,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 860535138685342265, guid: f7c10b21896601e40bd614f6b3965686, type: 3}
   m_PrefabInstance: {fileID: 94791715}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &94791717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1519873771309815068, guid: f7c10b21896601e40bd614f6b3965686, type: 3}
+  m_PrefabInstance: {fileID: 94791715}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &110614934
 GameObject:
   m_ObjectHideFlags: 0
@@ -9181,7 +9186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartingTime: 20
   CountDownText: {fileID: 1413853093}
-  WinScreen: {fileID: 0}
+  WinScreen: {fileID: 94791717}
 --- !u!114 &1145501900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9283,7 +9288,7 @@ PrefabInstance:
     - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
       propertyPath: EnemyPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 5372524496563326769, guid: 1b196b29ca63da3439483c1fa0581ee9, type: 3}
+      objectReference: {fileID: 5372524496563326769, guid: 3e3afb152fa252b49852430bfd8918eb, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9885,7 +9890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4292552953585191614, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -14.999939
+      value: -14.999924
       objectReference: {fileID: 0}
     - target: {fileID: 4292552953585191614, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10020,7 +10025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d194239f06cacb49b9e45917fbabc28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 276504300817273226, guid: 1790cbc5e7f06f34c99eeebf74ac67df, type: 3}
+  towerPrefab: {fileID: 4685198866706830210, guid: 71ecd0dd3e5983048bd78eb09b9bae11, type: 3}
   optionsPanel: {fileID: 245824064}
 --- !u!4 &1315246490
 Transform:
