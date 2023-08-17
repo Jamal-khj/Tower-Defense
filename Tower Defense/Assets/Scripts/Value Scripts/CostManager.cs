@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class CostManager : MonoBehaviour
@@ -18,10 +19,10 @@ public class CostManager : MonoBehaviour
 
     public float DeductMoney(float cost)
     {
-        float costDeducted;
-        cost -= coinvalue.currentAmount;
-        costDeducted = cost;
-        return costDeducted;
+        float deductedAmount;
+        coinvalue.coinSlider.value = coinvalue.currentAmount;
+        deductedAmount = coinvalue.currentAmount - cost;
+        return deductedAmount;
     }
 
 }
