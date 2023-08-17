@@ -8201,6 +8201,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1153638036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1519873771309815068, guid: f7c10b21896601e40bd614f6b3965686, type: 3}
+  m_PrefabInstance: {fileID: 439356763}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1180767623
 GameObject:
   m_ObjectHideFlags: 0
@@ -12309,9 +12314,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db9d972360d4ee243abf8268ee6f08c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingTime: 60
+  StartingTime: 5
   CountDownText: {fileID: 81951161}
-  WinScreen: {fileID: 0}
+  WinScreen: {fileID: 1153638036}
 --- !u!1 &1725315194 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4dd0fc813b245ed4e8c88956da67674c, type: 3}

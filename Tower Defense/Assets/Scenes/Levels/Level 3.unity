@@ -16008,7 +16008,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartingTime: 50
   CountDownText: {fileID: 217180047}
-  WinScreen: {fileID: 0}
+  WinScreen: {fileID: 2143101804}
 --- !u!114 &1864252881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16842,5 +16842,10 @@ PrefabInstance:
 --- !u!224 &2143101803 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 860535138685342265, guid: f7c10b21896601e40bd614f6b3965686, type: 3}
+  m_PrefabInstance: {fileID: 2143101802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2143101804 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1519873771309815068, guid: f7c10b21896601e40bd614f6b3965686, type: 3}
   m_PrefabInstance: {fileID: 2143101802}
   m_PrefabAsset: {fileID: 0}

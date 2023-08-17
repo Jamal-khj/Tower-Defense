@@ -408,6 +408,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 860535138685342265, guid: f7c10b21896601e40bd614f6b3965686, type: 3}
   m_PrefabInstance: {fileID: 94791715}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &94791717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1519873771309815068, guid: f7c10b21896601e40bd614f6b3965686, type: 3}
+  m_PrefabInstance: {fileID: 94791715}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &110614934
 GameObject:
   m_ObjectHideFlags: 0
@@ -9181,7 +9186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartingTime: 20
   CountDownText: {fileID: 1413853093}
-  WinScreen: {fileID: 0}
+  WinScreen: {fileID: 94791717}
 --- !u!114 &1145501900
 MonoBehaviour:
   m_ObjectHideFlags: 0
