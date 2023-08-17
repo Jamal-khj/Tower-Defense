@@ -12,7 +12,9 @@ public class TowerSpawn : MonoBehaviour
     private Collider2D currentCollider;
     private bool canPlace;
     private bool releasedButton;
-    TowerHandler current;
+
+    PassiveManaTest slider;
+    CostManager cost;
 
     void Awake()
     {
@@ -61,14 +63,15 @@ public class TowerSpawn : MonoBehaviour
         }
     }
 
-    private void SpawnTower()
+    public void SpawnTower()
     {
-        GameObject spawnedTower = Instantiate(towerPrefab, currentTowerSpawnLocation, Quaternion.identity);
-        optionsPanel.SetActive(false);
-        canPlace = false;
-        currentCollider.enabled = false;
-
-      
+        if (slider.currentAmount > 0)
+        {
+            GameObject spawnedTower = Instantiate(towerPrefab, currentTowerSpawnLocation, Quaternion.identity);
+            optionsPanel.SetActive(false);
+            canPlace = false;
+            currentCollider.enabled = false;
+        }  
     }
 
     private void ShowOptionsPanel()
