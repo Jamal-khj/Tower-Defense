@@ -65,13 +65,10 @@ public class TowerSpawn : MonoBehaviour
 
     public void SpawnTower()
     {
-        if (slider.currentAmount > 0)
-        {
             GameObject spawnedTower = Instantiate(towerPrefab, currentTowerSpawnLocation, Quaternion.identity);
             optionsPanel.SetActive(false);
             canPlace = false;
             currentCollider.enabled = false;
-        }  
     }
 
     private void ShowOptionsPanel()
