@@ -6940,7 +6940,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -307, y: 203}
+  m_AnchoredPosition: {x: -307, y: 200}
   m_SizeDelta: {x: -568.6958, y: -398.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &156606923
@@ -10664,12 +10664,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
       propertyPath: EnemyPrefabs.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
       propertyPath: EnemyPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 5372524496563326769, guid: 1b196b29ca63da3439483c1fa0581ee9, type: 3}
+      objectReference: {fileID: 5372524496563326769, guid: 3e3afb152fa252b49852430bfd8918eb, type: 3}
     - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
       propertyPath: EnemyPrefabs.Array.data[1]
       value: 
@@ -11150,7 +11150,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 306.08597, y: 203}
+  m_AnchoredPosition: {x: 306.08597, y: 200}
   m_SizeDelta: {x: -568.6958, y: -398.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &892299191
@@ -11765,7 +11765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4292552953585191614, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15
+      value: -16
       objectReference: {fileID: 0}
     - target: {fileID: 4292552953585191614, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

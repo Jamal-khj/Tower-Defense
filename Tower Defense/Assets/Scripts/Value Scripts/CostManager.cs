@@ -1,22 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CostManager : MonoBehaviour
 {
     PassiveManaTest coinvalue; 
 
-    public float towerCost = 5;
+    public float basicTowerCost = 5;
+
+    void Awake()
+    {
+        coinvalue = GetComponent<PassiveManaTest>();
+    }
 
     void Update()
     {
-        DeductMoney(towerCost);
+        DeductMoney(basicTowerCost);
     }
 
     public float DeductMoney(float cost)
     {
+        float costDeducted;
         cost -= coinvalue.currentAmount;
-        return cost;
+        costDeducted = cost;
+        return costDeducted;
     }
 
 }
