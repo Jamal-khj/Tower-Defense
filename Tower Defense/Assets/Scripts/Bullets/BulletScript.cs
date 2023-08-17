@@ -24,8 +24,10 @@ public class BulletScript : MonoBehaviour
         if (Enemy != null)
         {
             Vector2 direction = Enemy.transform.position - transform.position;
-
             rb.velocity = new Vector2(direction.x, direction.y).normalized * Force;
+            
+            float rot = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, 0, rot + 180);
         }
     }
 }
