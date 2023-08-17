@@ -10,10 +10,12 @@ public class EnemyHP : MonoBehaviour, IDamageable<int>
     [SerializeField] private int dmgValue = 2;
 
     [SerializeField] private GameObject enemy;
-    [SerializeField] private AudioSource deathSound;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] AudioClip deathSound;
 
     void Start()
     {
+        audioSource = FindObjectOfType<AudioSource>();
         killCount = 0;
     }
 
@@ -32,11 +34,17 @@ public class EnemyHP : MonoBehaviour, IDamageable<int>
     {
         if (hp <= 0)
         {
-            deathSound.Play();
             Destroy(enemy);
             killCount++;
+            Debug.Log("DEATH");
        
         }
+    }
+
+    void OnDestroy()
+    {
+        audioSource.PlayOneShot(deathSound, 1f);
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

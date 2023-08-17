@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class HQHealth : MonoBehaviour, IDamageable<int>
 {
     [SerializeField] private float currentHP;
-    [SerializeField] private float maxHP;
+    [SerializeField] private float maxHP = 20f;
     [SerializeField] private int dmgValue = 1;
     public Slider healthSlider;
 
