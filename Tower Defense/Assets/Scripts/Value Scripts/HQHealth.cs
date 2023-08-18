@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,6 +9,7 @@ public class HQHealth : MonoBehaviour, IDamageable<int>
     [SerializeField] private float maxHP = 20f;
     [SerializeField] private int dmgValue = 1;
     public Slider healthSlider;
+    [SerializeField] private AudioSource  clashSound;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,11 @@ public class HQHealth : MonoBehaviour, IDamageable<int>
         if (collision.collider.CompareTag("Enemy"))
         {
             TakeDamage(dmgValue);
+        }
+        if (collision.collider.tag == "Enemy")
+        {
+            clashSound.Play();
+              
         }
     }
 
