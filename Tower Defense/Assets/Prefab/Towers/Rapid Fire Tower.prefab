@@ -33,7 +33,7 @@ Transform:
   m_Children:
   - {fileID: 2215925775422416170}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7546730669859497359
 SpriteRenderer:
@@ -99,10 +99,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ade6255aebda674b827005af889e361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullet: {fileID: -8024427683924176245, guid: 84dccff3e49305542a517ed485a90c11, type: 3}
-  BulletPos: {fileID: 2215925775422416170}
+  bulletObj: {fileID: 0}
+  bulletPos: {fileID: 2215925775422416170}
   enemies: []
   Timer: 0
+  arrowShooting: {fileID: 0}
 --- !u!58 &7817627923429356236
 CircleCollider2D:
   m_ObjectHideFlags: 0
