@@ -40,14 +40,8 @@ public class EnemyHP : MonoBehaviour, IDamageable<int>
             Destroy(enemy);
             killCount++;
             Debug.Log("DEATH");
-       
+            audioSource.PlayOneShot(deathSound, 1f);
         }
-    }
-
-    void OnDestroy()
-    {
-        audioSource.PlayOneShot(deathSound, 1f);
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
