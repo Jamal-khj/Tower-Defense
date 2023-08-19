@@ -1369,13 +1369,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
+      propertyPath: FixedTimer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
       propertyPath: EnemyPrefabs.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
       propertyPath: EnemyPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 5372524496563326769, guid: ecd55174d72e35f4495a1c8c51074fcb, type: 3}
+      objectReference: {fileID: 5372524496563326769, guid: 2ce80eac16a30f84bb2684c4cce06921, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1544,6 +1548,10 @@ PrefabInstance:
     - target: {fileID: 6525233584429252665, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
+      propertyPath: FixedTimer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
       propertyPath: EnemyPrefabs.Array.size
@@ -1824,7 +1832,7 @@ PrefabInstance:
     - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
       propertyPath: EnemyPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 5372524496563326769, guid: 1b196b29ca63da3439483c1fa0581ee9, type: 3}
+      objectReference: {fileID: 5372524496563326769, guid: 600c9cfe38fbe6b4d9791c858959ce11, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16193,7 +16201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db9d972360d4ee243abf8268ee6f08c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingTime: 50
+  StartingTime: 60
   CountDownText: {fileID: 217180047}
   WinScreen: {fileID: 2143101804}
 --- !u!114 &1864252881
