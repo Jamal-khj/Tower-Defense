@@ -874,8 +874,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -93, y: -461}
-  m_SizeDelta: {x: 0, y: -579.5}
+  m_AnchoredPosition: {x: -34, y: -460}
+  m_SizeDelta: {x: 0, y: -580}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &306625378
 MonoBehaviour:
@@ -1067,7 +1067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4292552953585191614, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 4292552953585191614, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1224,7 +1224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -307, y: 203.00002}
+  m_AnchoredPosition: {x: -307, y: 203.4}
   m_SizeDelta: {x: -568.6958, y: -398.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &352030739
@@ -2799,8 +2799,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d194239f06cacb49b9e45917fbabc28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 4685198866706830210, guid: 71ecd0dd3e5983048bd78eb09b9bae11, type: 3}
+  towerPrefab:
+  - {fileID: 4685198866706830210, guid: 71ecd0dd3e5983048bd78eb09b9bae11, type: 3}
+  - {fileID: 4566954977935954891, guid: e89c075c68a3a3f42951786014f529d1, type: 3}
+  - {fileID: 5655442565857641763, guid: 374c98099ed170a45a3ef44e9ac08562, type: 3}
   optionsPanel: {fileID: 1876722731}
+  towerNumber: 0
 --- !u!4 &1004942162
 Transform:
   m_ObjectHideFlags: 0
@@ -3816,7 +3820,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1344001266}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1004942161}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SetTowerNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1004942161}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SpawnTower
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 7
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1344001266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11736,14 +11764,26 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1004942161}
-        m_TargetAssemblyTypeName: TowerSpawnScript, Assembly-CSharp
-        m_MethodName: SpawnTower
-        m_Mode: 1
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SetTowerNumber
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1004942161}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SpawnTower
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -16138,7 +16178,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 307.2, y: 201.7}
+  m_AnchoredPosition: {x: 310.7, y: 204}
   m_SizeDelta: {x: -568.6958, y: -398.6769}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1864252880
@@ -16675,7 +16715,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2018515136}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1004942161}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SetTowerNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1004942161}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SpawnTower
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 10
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2018515136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16958,7 +17022,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 860535138685342265, guid: f7c10b21896601e40bd614f6b3965686, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -92.08334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 860535138685342265, guid: f7c10b21896601e40bd614f6b3965686, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
