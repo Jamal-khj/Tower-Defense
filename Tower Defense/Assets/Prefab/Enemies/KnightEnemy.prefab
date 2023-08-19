@@ -349,6 +349,7 @@ MonoBehaviour:
   enemy: {fileID: 5372524496563326769}
   audioSource: {fileID: 0}
   deathSound: {fileID: 8300000, guid: cdbcaed9b80a9ed4082b3be98d605938, type: 3}
+  audioPlayer: {fileID: 0}
 --- !u!61 &4238949510052118345
 BoxCollider2D:
   m_ObjectHideFlags: 0

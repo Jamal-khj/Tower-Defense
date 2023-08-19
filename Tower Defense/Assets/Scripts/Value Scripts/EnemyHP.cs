@@ -1,4 +1,4 @@
-using UnityEditor.Tilemaps;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 //using Andrew.Script;)
@@ -12,6 +12,9 @@ public class EnemyHP : MonoBehaviour, IDamageable<int>
     [SerializeField] private GameObject enemy;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] AudioClip deathSound;
+    public AudioSource audioPlayer;
+    
+
 
     void Start()
     {
@@ -53,7 +56,11 @@ public class EnemyHP : MonoBehaviour, IDamageable<int>
         {
             TakeDamage(dmgValue);
         }
+       
+        
     }
+
+    
 
     public void TakeDamage(int damage)
     {
