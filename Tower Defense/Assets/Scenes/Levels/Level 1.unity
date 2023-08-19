@@ -6673,7 +6673,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 346525707}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 713274007}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SetTowerNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 713274007}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SpawnTower
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 10
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &346525707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7563,9 +7587,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerPrefab:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4685198866706830210, guid: 71ecd0dd3e5983048bd78eb09b9bae11, type: 3}
+  - {fileID: 4566954977935954891, guid: e89c075c68a3a3f42951786014f529d1, type: 3}
+  - {fileID: 5655442565857641763, guid: 374c98099ed170a45a3ef44e9ac08562, type: 3}
   optionsPanel: {fileID: 1124094995}
   towerNumber: 0
 --- !u!4 &713274008
@@ -12479,7 +12503,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1777316054}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 713274007}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SetTowerNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 713274007}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SpawnTower
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 7
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1777316054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12788,14 +12836,26 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 713274007}
-        m_TargetAssemblyTypeName: TowerSpawnScript, Assembly-CSharp
-        m_MethodName: SpawnTower
-        m_Mode: 1
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SetTowerNumber
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 713274007}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SpawnTower
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
