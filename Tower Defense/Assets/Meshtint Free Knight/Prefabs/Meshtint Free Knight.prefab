@@ -177,7 +177,6 @@ GameObject:
   - component: {fileID: 4079118292684216}
   - component: {fileID: 95382778294392932}
   - component: {fileID: 293245886263538791}
-  - component: {fileID: 4743851682822449440}
   m_Layer: 0
   m_Name: Meshtint Free Knight
   m_TagString: Untagged
@@ -203,7 +202,7 @@ Transform:
   - {fileID: 4900981806876430}
   - {fileID: 4931071484798056}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &95382778294392932
 Animator:
@@ -239,19 +238,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: {fileID: 11400000, guid: ddbea516c76f2e54fb5e8f6377a2ef73, type: 2}
---- !u!114 &4743851682822449440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1022148595836406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df4fee2b23a25044ea4358796ea7dafa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turnspeed: 50
 --- !u!1 &1087546517206048
 GameObject:
   m_ObjectHideFlags: 0
