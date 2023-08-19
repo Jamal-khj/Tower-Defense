@@ -7,6 +7,7 @@ public class PassiveManaTest : MonoBehaviour
     public Slider coinSlider;
     public float currentAmount;
     public int coinMax;
+
     // Start is called before the first frame update
     void Start()
     {

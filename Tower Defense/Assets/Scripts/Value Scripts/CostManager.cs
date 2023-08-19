@@ -1,9 +1,8 @@
-using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class CostManager : MonoBehaviour
 {
-    PassiveManaTest coinvalue; 
+    public PassiveManaTest coinvalue;
 
     public float basicTowerCost = 5;
 
@@ -19,10 +18,10 @@ public class CostManager : MonoBehaviour
 
     public float DeductMoney(float cost)
     {
-        float deductedAmount;
+        float postValue;
         coinvalue.coinSlider.value = coinvalue.currentAmount;
-        deductedAmount = coinvalue.currentAmount - cost;
-        return deductedAmount;
+        postValue = coinvalue.currentAmount - cost;
+        return postValue;
     }
 
 }

@@ -14,7 +14,7 @@ public class TowerSpawn : MonoBehaviour
     private bool releasedButton;
 
     PassiveManaTest slider;
-    CostManager cost;
+    CostManager costManager;
 
     void Awake()
     {
@@ -68,6 +68,7 @@ public class TowerSpawn : MonoBehaviour
             optionsPanel.SetActive(false);
             canPlace = false;
             currentCollider.enabled = false;
+            costManager.DeductMoney();
     }
 
     private void ShowOptionsPanel()
