@@ -5,6 +5,8 @@ public class CostManager : MonoBehaviour
     public PassiveManaTest coinvalue;
 
     public float basicTowerCost = 5;
+    public float rapidFireCost = 10;
+    public float heavyFireCost = 15;
 
     void Awake()
     {

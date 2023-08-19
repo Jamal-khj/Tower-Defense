@@ -12,14 +12,16 @@ public class PassiveManaTest : MonoBehaviour
     void Start()
     {
         coinSlider = GetComponent<Slider>();
+        coinSlider.maxValue = coinMax;
         currentAmount = 0;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         coinSlider.value = currentAmount;
-        coinSlider.maxValue = coinMax;
+        
         currentAmount += Time.deltaTime;
     }
 }

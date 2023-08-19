@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class TowerSpawn : MonoBehaviour
 {
-    [SerializeField] private GameObject towerPrefab;
+    [SerializeField] private GameObject[] towerPrefab;
     [SerializeField] private GameObject optionsPanel;
 
     private Vector3 mousePos;
@@ -16,9 +16,15 @@ public class TowerSpawn : MonoBehaviour
     PassiveManaTest slider;
     CostManager costManager;
 
+    public int towerNumber;
+
+
+
     void Awake()
     {
         optionsPanel.SetActive(false);
+        slider = FindObjectOfType<PassiveManaTest>();
+        costManager = FindObjectOfType<CostManager>();
     }
 
     void Start()
@@ -46,6 +52,11 @@ public class TowerSpawn : MonoBehaviour
         }
     }
 
+    public void SetTowerNumber(int towerNumber)
+    {
+        this.towerNumber = towerNumber;
+    }
+
     public void MouseInput()
     {
         if (Input.GetMouseButtonDown(0))
@@ -62,14 +73,22 @@ public class TowerSpawn : MonoBehaviour
         }
     }
 
-    public void SpawnTower()
+    public void SpawnTower(float towerCost)
     {
-            GameObject spawnedTower = Instantiate(towerPrefab, currentTowerSpawnLocation, Quaternion.identity);
+        if (slider.currentAmount >= towerCost)
+        {
+            GameObject spawnedTower = Instantiate(towerPrefab[towerNumber], currentTowerSpawnLocation, Quaternion.identity);
             optionsPanel.SetActive(false);
             canPlace = false;
             currentCollider.enabled = false;
-            costManager.DeductMoney();
+            slider.currentAmount -= towerCost;
+        }
+        else
+        {
+            Debug.Log("You're broke");
+        }
     }
+
 
     private void ShowOptionsPanel()
     {
