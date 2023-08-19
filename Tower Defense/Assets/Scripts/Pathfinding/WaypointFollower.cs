@@ -18,6 +18,6 @@ public class WaypointFollower : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, waypoints.points[index], 5 * Time.deltaTime);
         dist = Vector2.Distance(transform.position, waypoints.points[index]);
         if (dist < 0.2f && index != waypoints.points.Length) index++;
-        transform.LookAt(waypoints.points[index], -Vector3.forward);
+       // transform.LookAt(waypoints.points[index], -Vector3.forward);
     }
 }
