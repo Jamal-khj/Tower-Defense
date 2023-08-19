@@ -7562,8 +7562,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d194239f06cacb49b9e45917fbabc28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 4685198866706830210, guid: 71ecd0dd3e5983048bd78eb09b9bae11, type: 3}
+  towerPrefab:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   optionsPanel: {fileID: 1124094995}
+  towerNumber: 0
 --- !u!4 &713274008
 Transform:
   m_ObjectHideFlags: 0
@@ -8259,6 +8263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameButton: {fileID: 1180767623}
+  pauseMenu: {fileID: 0}
 --- !u!1 &1318647600
 GameObject:
   m_ObjectHideFlags: 0
@@ -11809,6 +11814,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1329358892}
     m_Modifications:
+    - target: {fileID: 3379369905777211986, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
+      propertyPath: coinMax
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4292552953585191614, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11891,7 +11900,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4292552953585191614, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15.000076
+      value: -15.000061
       objectReference: {fileID: 0}
     - target: {fileID: 4292552953585191614, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11908,6 +11917,34 @@ PrefabInstance:
     - target: {fileID: 4636786343056057470, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131612968091552703, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131612968091552703, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131612968091552703, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 713274007}
+    - target: {fileID: 5131612968091552703, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131612968091552703, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetTowerNumber
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131612968091552703, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TowerSpawn, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131612968091552703, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6866438067211362771, guid: 95c62b692a68cc644ab92a78249a5212, type: 3}
       propertyPath: m_AnchorMax.x
@@ -12328,7 +12365,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  clashSound: {fileID: 0}
 --- !u!1 &1772306259
 GameObject:
   m_ObjectHideFlags: 0
