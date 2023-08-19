@@ -652,8 +652,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -34.000305, y: -461.00006}
-  m_SizeDelta: {x: 0, y: -579.5}
+  m_AnchoredPosition: {x: -34, y: -460}
+  m_SizeDelta: {x: 0, y: -580}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &258029579
 MonoBehaviour:
@@ -776,7 +776,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 273999922}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1493556274}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SetTowerNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1493556274}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SpawnTower
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 10
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &273999922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7104,7 +7128,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1217967302}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1493556274}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SetTowerNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1493556274}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SpawnTower
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 7
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1217967302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7626,8 +7674,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d194239f06cacb49b9e45917fbabc28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 4685198866706830210, guid: 71ecd0dd3e5983048bd78eb09b9bae11, type: 3}
+  towerPrefab:
+  - {fileID: 4685198866706830210, guid: 71ecd0dd3e5983048bd78eb09b9bae11, type: 3}
+  - {fileID: 4566954977935954891, guid: e89c075c68a3a3f42951786014f529d1, type: 3}
+  - {fileID: 5655442565857641763, guid: 374c98099ed170a45a3ef44e9ac08562, type: 3}
   optionsPanel: {fileID: 258029577}
+  towerNumber: 0
 --- !u!1 &1519789377
 GameObject:
   m_ObjectHideFlags: 0
@@ -8279,14 +8331,26 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1493556274}
-        m_TargetAssemblyTypeName: TowerSpawnScript, Assembly-CSharp
-        m_MethodName: SpawnTower
-        m_Mode: 1
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SetTowerNumber
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1493556274}
+        m_TargetAssemblyTypeName: TowerSpawn, Assembly-CSharp
+        m_MethodName: SpawnTower
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
