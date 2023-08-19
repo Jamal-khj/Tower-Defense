@@ -9273,6 +9273,10 @@ PrefabInstance:
       value: Enemy Spawner Manager
       objectReference: {fileID: 0}
     - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
+      propertyPath: FixedTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
       propertyPath: EnemyPrefabs.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -10519,7 +10523,7 @@ MonoBehaviour:
   - {fileID: 1281493280}
   - {fileID: 1233794915}
   - {fileID: 483479316}
-  pointHolder: {fileID: 11400000, guid: ddbea516c76f2e54fb5e8f6377a2ef73, type: 2}
+  pointHolder: {fileID: 11400000, guid: 67d4474cafc668b49a34cf8b91ba87c2, type: 2}
 --- !u!4 &1567823848
 Transform:
   m_ObjectHideFlags: 0
