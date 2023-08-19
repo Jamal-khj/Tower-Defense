@@ -5869,7 +5869,7 @@ MonoBehaviour:
   currentHP: 0
   maxHP: 10
   dmgValue: 1
-  healthSlider: {fileID: 0}
+  healthSlider: {fileID: 2087728915}
   clashSound: {fileID: 1216887059}
 --- !u!61 &1216887058
 BoxCollider2D:
@@ -7962,6 +7962,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
+--- !u!114 &2087728915 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8586854354971973828, guid: f5f56ecc48e38174d96a2e1db954516b, type: 3}
+  m_PrefabInstance: {fileID: 608641608}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2093767149
 GameObject:
   m_ObjectHideFlags: 0
