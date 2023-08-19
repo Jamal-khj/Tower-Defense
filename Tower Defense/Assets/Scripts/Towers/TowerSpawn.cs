@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class TowerSpawn : MonoBehaviour
 {
-    [SerializeField] private GameObject towerPrefab;
+    [SerializeField] private GameObject[] towerPrefab;
     [SerializeField] private GameObject optionsPanel;
 
     private Vector3 mousePos;
@@ -14,11 +14,17 @@ public class TowerSpawn : MonoBehaviour
     private bool releasedButton;
 
     PassiveManaTest slider;
-    CostManager cost;
+    CostManager costManager;
+
+    public int towerNumber;
+
+
 
     void Awake()
     {
         optionsPanel.SetActive(false);
+        slider = FindObjectOfType<PassiveManaTest>();
+        costManager = FindObjectOfType<CostManager>();
     }
 
     void Start()
@@ -43,8 +49,12 @@ public class TowerSpawn : MonoBehaviour
                 Debug.Log($"THE CURRENT POSITION IS {currentTowerSpawnLocation}");
                 ShowOptionsPanel();
             }
-            
         }
+    }
+
+    public void SetTowerNumber(int towerNumber)
+    {
+        this.towerNumber = towerNumber;
     }
 
     public void MouseInput()
@@ -63,13 +73,22 @@ public class TowerSpawn : MonoBehaviour
         }
     }
 
-    public void SpawnTower()
+    public void SpawnTower(float towerCost)
     {
-            GameObject spawnedTower = Instantiate(towerPrefab, currentTowerSpawnLocation, Quaternion.identity);
+        if (slider.currentAmount >= towerCost)
+        {
+            GameObject spawnedTower = Instantiate(towerPrefab[towerNumber], currentTowerSpawnLocation, Quaternion.identity);
             optionsPanel.SetActive(false);
             canPlace = false;
             currentCollider.enabled = false;
+            slider.currentAmount -= towerCost;
+        }
+        else
+        {
+            Debug.Log("You're broke");
+        }
     }
+
 
     private void ShowOptionsPanel()
     {

@@ -14,7 +14,6 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         SpawnTimer = 3.0f;
     }
 
@@ -32,8 +31,6 @@ public class Spawner : MonoBehaviour
             int EnemySpawn = Random.Range(0, EnemyPrefabs.Length);
             int SpawnLocation = Random.Range(0, SpawnPoints.Length);
             Instantiate(EnemyPrefabs[EnemySpawn], SpawnPoints[SpawnLocation].position, transform.rotation);
-
-
         }
     }
 }

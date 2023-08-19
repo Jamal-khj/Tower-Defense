@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,18 +7,21 @@ public class PassiveManaTest : MonoBehaviour
     public Slider coinSlider;
     public float currentAmount;
     public int coinMax;
+
     // Start is called before the first frame update
     void Start()
     {
         coinSlider = GetComponent<Slider>();
+        coinSlider.maxValue = coinMax;
         currentAmount = 0;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         coinSlider.value = currentAmount;
-        coinSlider.maxValue = coinMax;
+        
         currentAmount += Time.deltaTime;
     }
 }
