@@ -13,7 +13,7 @@ public class PassiveManaTest : MonoBehaviour
     {
         coinSlider = GetComponent<Slider>();
         coinSlider.maxValue = coinMax;
-        currentAmount = 0;
+        currentAmount = 10;
         
     }
 
