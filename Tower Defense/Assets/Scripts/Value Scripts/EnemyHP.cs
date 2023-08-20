@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 //using Andrew.Script;)
@@ -8,6 +7,8 @@ public class EnemyHP : MonoBehaviour, IDamageable<int>
     [SerializeField] private int hp;
     [SerializeField] private int killCount;
     [SerializeField] private int dmgValue = 2;
+    [SerializeField] private int dmgValueRapid = 1;
+    [SerializeField] private int dmgValueSlow = 4;
 
     [SerializeField] private GameObject enemy;
     [SerializeField] private AudioSource audioSource;
@@ -50,11 +51,17 @@ public class EnemyHP : MonoBehaviour, IDamageable<int>
         {
             TakeDamage(dmgValue);
         }
-       
         
-    }
+        if (collision.gameObject.tag == "Bullet Rapid")
+        {
+            TakeDamage(dmgValue);
+        }
 
-    
+        if (collision.gameObject.tag == "Bullet Slow")
+        {
+            TakeDamage(dmgValue);
+        }
+    }
 
     public void TakeDamage(int damage)
     {
