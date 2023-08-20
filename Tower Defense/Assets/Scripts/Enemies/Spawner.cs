@@ -25,8 +25,6 @@ public class Spawner : MonoBehaviour
         // Spawn enemies
         if(SpawnTimer <= 0.0f)
         {
-            print("hello");
-
             SpawnTimer = FixedTimer;
             int EnemySpawn = Random.Range(0, EnemyPrefabs.Length);
             int SpawnLocation = Random.Range(0, SpawnPoints.Length);

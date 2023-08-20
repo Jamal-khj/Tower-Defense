@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class EnemyDestroyOnHQ : MonoBehaviour
 {
+    public GameObject enemyObject;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "HQ")
+        if (collision.gameObject.CompareTag("HQ"))
         {
-            Destroy(gameObject);
+            Destroy(enemyObject);
         }
     }
 }
