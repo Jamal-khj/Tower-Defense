@@ -9607,7 +9607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
       propertyPath: FixedTimer
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 7282304615322969349, guid: 52fd848418ed48549906d9285c2de5e2, type: 3}
       propertyPath: EnemyPrefabs.Array.size
