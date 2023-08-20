@@ -1,7 +1,7 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+//using Andrew.Script;)
 
 public class HQHealth : MonoBehaviour, IDamageable<int>
 {
@@ -15,7 +15,6 @@ public class HQHealth : MonoBehaviour, IDamageable<int>
     void Start()
     {
         currentHP = maxHP;
-
     }
 
     // Update is called once per frame
@@ -31,11 +30,7 @@ public class HQHealth : MonoBehaviour, IDamageable<int>
         if (collision.collider.CompareTag("Enemy"))
         {
             TakeDamage(dmgValue);
-        }
-        if (collision.collider.tag == "Enemy")
-        {
             clashSound.Play();
-              
         }
     }
 
