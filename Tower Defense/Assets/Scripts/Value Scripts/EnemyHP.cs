@@ -54,12 +54,12 @@ public class EnemyHP : MonoBehaviour, IDamageable<int>
         
         if (collision.gameObject.tag == "Bullet Rapid")
         {
-            TakeDamage(dmgValue);
+            TakeDamage(dmgValueRapid);
         }
 
         if (collision.gameObject.tag == "Bullet Slow")
         {
-            TakeDamage(dmgValue);
+            TakeDamage(dmgValueSlow);
         }
     }
 
