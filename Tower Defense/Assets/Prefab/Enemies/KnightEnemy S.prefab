@@ -328,9 +328,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09eedf337f78d6941b74ccb52cd52a0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 5
+  hp: 15
   killCount: 0
   dmgValue: 2
+  dmgValueRapid: 1
+  dmgValueSlow: 4
   enemy: {fileID: 5372524496563326769}
   audioSource: {fileID: 0}
   deathSound: {fileID: 8300000, guid: cdbcaed9b80a9ed4082b3be98d605938, type: 3}
